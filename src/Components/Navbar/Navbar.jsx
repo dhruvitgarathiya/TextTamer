@@ -14,12 +14,11 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-            </ul>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">{props.aboutText}</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">{props.aboutText}</a>
               </li>
             </ul>
+           
             <form className="d-flex" role="search">
               <label htmlFor="search-input" className="visually-hidden">Search</label>
               <input id="search-input" className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
