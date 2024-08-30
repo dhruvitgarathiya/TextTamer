@@ -40,6 +40,15 @@ export default function TextForm(props) {
     setText(event.target.value);
   };
 
+  //copy fucntion 
+  const handleCopy = () => {
+    console.log('i am the copy');
+    let text = document.getElementById("myBox");
+    text.select();
+    navigator.clipboard.writeText(text.value);
+
+  }
+
   const wordCount = text.split(' ').length;
   const charCount = text.length;
   const readTime = 0.08 * wordCount;
@@ -47,7 +56,7 @@ export default function TextForm(props) {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{color: props.mode==='light'?'black':'white'}}>
         <h1>{props.heading}</h1>
         <div className="mb-3">
           <textarea
@@ -56,6 +65,7 @@ export default function TextForm(props) {
             onChange={handleOnChange}
             id="myBox"
             rows="8"
+            style={{backgroundColor: props.mode==='light'?'white':'grey'}}
           ></textarea>
         </div>
         <button className="btn btn-success mx-3" onClick={handleUpClick}>
@@ -67,8 +77,11 @@ export default function TextForm(props) {
         <button className="btn btn-success mx-3" onClick={handleClearClick}>
           Clear Text
         </button>
+        <button className="btn btn-success mx-3" onClick={handleCopy}>
+          Copy Text
+        </button>
       </div>
-      <div className="container my-3">
+      <div className="container my-3" style={{color: props.mode==='light'?'black':'white'}} >
         <h1>Your Text Summary</h1>
         <p>
           {wordCount} words and {charCount} characters
