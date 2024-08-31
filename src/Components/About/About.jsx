@@ -8,7 +8,7 @@ export default function About () {
     backgroundColor : 'black'
  })
 
- const [btnText , setBtnText] = useState('Enable dark mode');
+ const [btnText , setBtnText] = useState('Enable light mode');
 
   const toggleStyle = () => {
     if(myStyle.color === 'white'){
@@ -16,14 +16,14 @@ export default function About () {
             color : 'black',
     backgroundColor : 'white'
         })
-        setBtnText('Enable light Mode');
+        setBtnText('Enable dark Mode');
     }
     else{
         setMyStyle({
             color : 'white',
     backgroundColor : 'black'
     })
-    setBtnText('Enable dark Mode');
+    setBtnText('Enable light Mode');
 }}
         
     return (
@@ -33,36 +33,47 @@ export default function About () {
         <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header">
             <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style={myStyle}>
-                Accordion Item #1
+                About the website
             </button>
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            About TextTamer :-
+             TextTamer is a versatile text utility web application built using React.js, a popular JavaScript library for building user interfaces. As my first React project,TextTamer aims to provide users with a comprehensive set of tools to manipulate and analyze their text effortlessly.
             </div>
             </div>
         </div>
         <div className="accordion-item">
             <h2 className="accordion-header">
             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={myStyle}>
-                Accordion Item #2
+              Key features
             </button>
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          Convert text to uppercase or lowercase with a single click,
+                Copy text to clipboard using a dedicated button,
+                Clear the text area with a clear button,
+                Count the number of times a word appears in the text,
+                Enable dark mode for a comfortable reading experience,
+                Utilize React Router for seamless navigation between pages,
+
             </div>
             </div>
         </div>
         <div className="accordion-item">
             <h2 className="accordion-header">
             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={myStyle}>
-                Accordion Item #3
+                Tech Stack
             </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                Built with React
+                TextTamer leverages the power of React.js to create a dynamic and responsive user interface. By breaking down the application into reusable components, I was able to create a modular and maintainable codebase. React's virtual DOM and efficient rendering algorithms ensure that the application remains fast and responsive, even with complex text manipulations.
+                Customizable and Extensible
+                The application is designed to be easily customizable and extensible. Users can modify the appearance and behavior of the application by adjusting the CSS styles and React components. Additionally, new features can be added to the application by extending the existing functionality or creating new components.
+            
             </div>
             </div>
         </div>
@@ -71,10 +82,26 @@ export default function About () {
         <div className="container my-3">
             <button onClick={toggleStyle} type="button" className="btn btn-primary">{btnText}</button>
         </div>
-        </div>
- 
 
-    );
+        <div className="container my-15 pt-15" style={{marginTop : '200px'}}>
+        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
+       <strong> My First Project in React is dedicated to my favorite footballer </strong> </h1>
+    <img src="https://wallpapers.com/images/featured-full/neymar-4k-wd8zvm5k8opf2tpb.jpg" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
+    </div>
 
+    <div className="container my-15 pt-15" style={{marginTop : '50px'}}>
+        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
+       <strong> And My Favorite Internet Personality</strong> </h1>
+    <img src="https://images8.alphacoders.com/134/1341367.png" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
+    </div>
+
+    <div className="container my-15 pt-15" style={{marginTop : '50px'}}>
+        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
+       <strong> And Afcourse Marvel Jesus</strong> </h1>
+    <img src="https://wallpapers-clan.com/wp-content/uploads/2024/02/marvel-deadpool-winking-red-desktop-wallpaper-preview.jpg" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
+    </div>
+       </div>
+);
+    
 
 };

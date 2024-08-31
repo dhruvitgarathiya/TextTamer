@@ -5,6 +5,19 @@ import Navbar from './Components/Navbar/Navbar';
 import About from './Components/About/About';
 import { useState } from 'react';
 import Alert from './Components/Alert/Alert';
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+  BrowserRouter,
+  Routes,
+} from "react-router-dom";
+
+
+  
+
 
 function App() {
   const [mode , setMode] = useState('light');
@@ -36,16 +49,22 @@ setTimeout( () => {
   }
   return (
     <>
-  <Navbar title="textutill"  aboutText="aboutus" mode={mode} toggleMode= {toggleMode} />
-  <Alert alert={alert}/>
-  <div className='container my-3'>
+     <Navbar title="TextTamer"  aboutText="aboutus" mode={mode} toggleMode= {toggleMode} />
+      <Alert alert={alert}/>
+      <div className='container my-3'>
     
-  <TextForm  heading="Enter the text to analyze" mode={mode}/> 
+  
+  <BrowserRouter>
+    <Routes>
    
-    <About />
-  </div> 
- 
-    </> 
+      <Route index element = {<TextForm  heading="Enter the text to analyze" mode={mode}/> }/>
+      <Route path='aboutus' element ={  <About />}  />      
+                                                                              
+  </Routes>
+ </BrowserRouter>
+
+        </div> 
+   </> 
     
   );
 }
