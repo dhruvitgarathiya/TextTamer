@@ -45,12 +45,12 @@ export default function About () {
         </div>
         <div className="accordion-item">
             <h2 className="accordion-header">
-            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={myStyle}>
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={myStyle}>
               Key features
             </button>
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
           Convert text to uppercase or lowercase with a single click,
                 Copy text to clipboard using a dedicated button,
                 Clear the text area with a clear button,
@@ -63,12 +63,12 @@ export default function About () {
         </div>
         <div className="accordion-item">
             <h2 className="accordion-header">
-            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={myStyle}>
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={myStyle}>
                 Tech Stack
             </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
                 Built with React
                 TextTamer leverages the power of React.js to create a dynamic and responsive user interface. By breaking down the application into reusable components, I was able to create a modular and maintainable codebase. React's virtual DOM and efficient rendering algorithms ensure that the application remains fast and responsive, even with complex text manipulations.
                 Customizable and Extensible
@@ -83,23 +83,7 @@ export default function About () {
             <button onClick={toggleStyle} type="button" className="btn btn-primary">{btnText}</button>
         </div>
 
-        <div className="container my-15 pt-15" style={{marginTop : '200px'}}>
-        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
-       <strong> My First Project in React is dedicated to my favorite footballer </strong> </h1>
-    <img src="https://wallpapers.com/images/featured-full/neymar-4k-wd8zvm5k8opf2tpb.jpg" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
-    </div>
-
-    <div className="container my-15 pt-15" style={{marginTop : '50px'}}>
-        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
-       <strong> And My Favorite Internet Personality</strong> </h1>
-    <img src="https://images8.alphacoders.com/134/1341367.png" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
-    </div>
-
-    <div className="container my-15 pt-15" style={{marginTop : '50px'}}>
-        <h1 style={{ fontFamily: 'Arial', fontSize: '24px', fontWeight: 'bold', textAlign: 'center' }}>
-       <strong> And Afcourse Marvel Jesus</strong> </h1>
-    <img src="https://wallpapers-clan.com/wp-content/uploads/2024/02/marvel-deadpool-winking-red-desktop-wallpaper-preview.jpg" class="img-fluid w-100" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.neymarjr.com%2Fen%2Ffootball%2Fneymar-jr-celebrates-values-team-performance-world-cup-2022&psig=AOvVaw2JB7l7JuKxRSdW46Ah1TQk&ust=1725170638487000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDejtjHnogDFQAAAAAdAAAAABAJ"  style={{marginBlockStart : '50px',fontFamily: "Oswald",fontOpticalSizing: "auto",fontWeight:'200-700',fontStyle: 'normal' }}/>
-    </div>
+    
        </div>
 );
     
