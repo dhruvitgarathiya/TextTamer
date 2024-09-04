@@ -1,6 +1,7 @@
 ## TextTamer Overview 🚀
 
 - **Name:** TextTamer
+- **Visit the Website** https://text-tamer.vercel.app/#
 - **Purpose:** Simplifies text manipulation and analysis 🔧
 - **Technology:** Built with React.js 💻
 - **Key Features:** 🎉
